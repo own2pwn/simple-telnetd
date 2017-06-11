@@ -2,7 +2,7 @@
 
 This is a very naiive implementation of a simple telnet daemon for macOS that allows clients to execute a  limited set of commands and receive their output back.
 
-Each command may have zero or more arguments *(note that string literals with whitespaces are not supported)* and follows this format:
+Each command may have zero or more arguments *(note that string literals with whitespaces [are not supported](./src/IETelnetConnection.m#L36))* and follows this format:
 
 ```
 /path/to/executable [argument1 argument2 argument3 ...]
