@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A291B121EED40C00032774C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B111EED40C00032774C /* main.m */; };
+		0A291B1F1EED410F0032774C /* QCommandConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B1A1EED410F0032774C /* QCommandConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0A291B201EED410F0032774C /* QCommandLineConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B1C1EED410F0032774C /* QCommandLineConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0A291B211EED410F0032774C /* QServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B1E1EED410F0032774C /* QServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0A291B241EED421E0032774C /* IETelnetServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B231EED421E0032774C /* IETelnetServer.m */; };
+		0A291B271EED42510032774C /* IETelnetServerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B261EED42510032774C /* IETelnetServerConfiguration.m */; };
+		0A291B2D1EED50CC0032774C /* IETelnetConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B2C1EED50CC0032774C /* IETelnetConnection.m */; };
+		0A291B311EED6A2E0032774C /* NSArray+FP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B2A1EED45840032774C /* NSArray+FP.m */; };
+		0A291B341EED7CE70032774C /* IETelnetDaemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B331EED7CE70032774C /* IETelnetDaemon.m */; };
+		0A291B361EED961D0032774C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B351EED961D0032774C /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A291B0C1EED40C00032774C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A291B0E1EED40C00032774C /* simple-telnetd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "simple-telnetd"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A291B111EED40C00032774C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A291B191EED410F0032774C /* QCommandConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCommandConnection.h; sourceTree = "<group>"; };
+		0A291B1A1EED410F0032774C /* QCommandConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCommandConnection.m; sourceTree = "<group>"; };
+		0A291B1B1EED410F0032774C /* QCommandLineConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCommandLineConnection.h; sourceTree = "<group>"; };
+		0A291B1C1EED410F0032774C /* QCommandLineConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCommandLineConnection.m; sourceTree = "<group>"; };
+		0A291B1D1EED410F0032774C /* QServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QServer.h; sourceTree = "<group>"; };
+		0A291B1E1EED410F0032774C /* QServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QServer.m; sourceTree = "<group>"; };
+		0A291B221EED421E0032774C /* IETelnetServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IETelnetServer.h; sourceTree = "<group>"; };
+		0A291B231EED421E0032774C /* IETelnetServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IETelnetServer.m; sourceTree = "<group>"; };
+		0A291B251EED42510032774C /* IETelnetServerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IETelnetServerConfiguration.h; sourceTree = "<group>"; };
+		0A291B261EED42510032774C /* IETelnetServerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IETelnetServerConfiguration.m; sourceTree = "<group>"; };
+		0A291B291EED45840032774C /* NSArray+FP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+FP.h"; sourceTree = "<group>"; };
+		0A291B2A1EED45840032774C /* NSArray+FP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FP.m"; sourceTree = "<group>"; };
+		0A291B2B1EED50CC0032774C /* IETelnetConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IETelnetConnection.h; sourceTree = "<group>"; };
+		0A291B2C1EED50CC0032774C /* IETelnetConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IETelnetConnection.m; sourceTree = "<group>"; };
+		0A291B321EED7CE70032774C /* IETelnetDaemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IETelnetDaemon.h; sourceTree = "<group>"; };
+		0A291B331EED7CE70032774C /* IETelnetDaemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IETelnetDaemon.m; sourceTree = "<group>"; };
+		0A291B351EED961D0032774C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A291B0B1EED40C00032774C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A291B051EED40C00032774C = {
+			isa = PBXGroup;
+			children = (
+				0A291B351EED961D0032774C /* README.md */,
+				0A291B101EED40C00032774C /* src */,
+				0A291B181EED410F0032774C /* vendor (Apple) */,
+				0A291B0F1EED40C00032774C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A291B0F1EED40C00032774C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A291B0E1EED40C00032774C /* simple-telnetd */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A291B101EED40C00032774C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0A291B111EED40C00032774C /* main.m */,
+				0A291B321EED7CE70032774C /* IETelnetDaemon.h */,
+				0A291B331EED7CE70032774C /* IETelnetDaemon.m */,
+				0A291B221EED421E0032774C /* IETelnetServer.h */,
+				0A291B231EED421E0032774C /* IETelnetServer.m */,
+				0A291B2B1EED50CC0032774C /* IETelnetConnection.h */,
+				0A291B2C1EED50CC0032774C /* IETelnetConnection.m */,
+				0A291B251EED42510032774C /* IETelnetServerConfiguration.h */,
+				0A291B261EED42510032774C /* IETelnetServerConfiguration.m */,
+				0A291B281EED45840032774C /* Categories */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		0A291B181EED410F0032774C /* vendor (Apple) */ = {
+			isa = PBXGroup;
+			children = (
+				0A291B191EED410F0032774C /* QCommandConnection.h */,
+				0A291B1A1EED410F0032774C /* QCommandConnection.m */,
+				0A291B1B1EED410F0032774C /* QCommandLineConnection.h */,
+				0A291B1C1EED410F0032774C /* QCommandLineConnection.m */,
+				0A291B1D1EED410F0032774C /* QServer.h */,
+				0A291B1E1EED410F0032774C /* QServer.m */,
+			);
+			name = "vendor (Apple)";
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		0A291B281EED45840032774C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0A291B291EED45840032774C /* NSArray+FP.h */,
+				0A291B2A1EED45840032774C /* NSArray+FP.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A291B0D1EED40C00032774C /* simple-telnetd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A291B151EED40C00032774C /* Build configuration list for PBXNativeTarget "simple-telnetd" */;
+			buildPhases = (
+				0A291B0A1EED40C00032774C /* Sources */,
+				0A291B0B1EED40C00032774C /* Frameworks */,
+				0A291B0C1EED40C00032774C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "simple-telnetd";
+			productName = "simple-telnetd";
+			productReference = 0A291B0E1EED40C00032774C /* simple-telnetd */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A291B061EED40C00032774C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Internals Exposed";
+				TargetAttributes = {
+					0A291B0D1EED40C00032774C = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = C6QG5C28K7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0A291B091EED40C00032774C /* Build configuration list for PBXProject "simple-telnetd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0A291B051EED40C00032774C;
+			productRefGroup = 0A291B0F1EED40C00032774C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A291B0D1EED40C00032774C /* simple-telnetd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A291B0A1EED40C00032774C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A291B211EED410F0032774C /* QServer.m in Sources */,
+				0A291B2D1EED50CC0032774C /* IETelnetConnection.m in Sources */,
+				0A291B361EED961D0032774C /* README.md in Sources */,
+				0A291B341EED7CE70032774C /* IETelnetDaemon.m in Sources */,
+				0A291B201EED410F0032774C /* QCommandLineConnection.m in Sources */,
+				0A291B241EED421E0032774C /* IETelnetServer.m in Sources */,
+				0A291B121EED40C00032774C /* main.m in Sources */,
+				0A291B271EED42510032774C /* IETelnetServerConfiguration.m in Sources */,
+				0A291B311EED6A2E0032774C /* NSArray+FP.m in Sources */,
+				0A291B1F1EED410F0032774C /* QCommandConnection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0A291B131EED40C00032774C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0A291B141EED40C00032774C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0A291B161EED40C00032774C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = C6QG5C28K7;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A291B171EED40C00032774C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = C6QG5C28K7;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A291B091EED40C00032774C /* Build configuration list for PBXProject "simple-telnetd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A291B131EED40C00032774C /* Debug */,
+				0A291B141EED40C00032774C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A291B151EED40C00032774C /* Build configuration list for PBXNativeTarget "simple-telnetd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A291B161EED40C00032774C /* Debug */,
+				0A291B171EED40C00032774C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A291B061EED40C00032774C /* Project object */;
+}
