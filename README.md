@@ -18,7 +18,7 @@ $ xcodebuild -target simple-telnetd -configuration Release
 
 ### Configuration
 
-Which commands are allowed is determined by the contents of the configuration file /tmp/simple-telnetd.conf. For example if you want to only allow `cat` and `echo` commands, the configuration file will looks like follows:
+Which commands are allowed is determined by the contents of the configuration file `/tmp/simple-telnetd.conf`. For example if you want to only allow `cat` and `echo` commands, the configuration file will looks like follows:
 
 ```
 /bin/cat
