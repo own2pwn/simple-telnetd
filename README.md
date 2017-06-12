@@ -1,6 +1,6 @@
 ## simple-telnetd
 
-This is a very naiive implementation of a simple telnet daemon for macOS that allows clients to execute a  limited set of commands and receive their output back.
+This is a naiive implementation of a simple telnet daemon for macOS that allows clients to execute a  limited set of commands and receive their output back.
 
 Each command may have zero or more arguments *(note that string literals with whitespaces [are not supported](./src/IETelnetConnection.m#L36))* and follows this format:
 
@@ -69,6 +69,8 @@ Escape character is '^]'.
 > Note that while the daemon does capture all of the command's output (i.e. stdout and stderr), it is not possible to interact with the command via stdin or any other facility.
 
 ## Architecture
+
+### Overview
 
 ```                                                                                  
                                                                                      
@@ -148,17 +150,76 @@ any execution errors to the client.
                                                                                                                                               
 ```
 
-### Copyrights
+### Request Handling Workflow
+
+```
+  ┌───────────────────┐         1. When the daemon starts, it calls +start on      
+  │                   │         IETelnetServer to boot it up and start listening   
+  │  IETelnetServer   │         for incoming requests.                             
+  │                   │                                                            
+  └───────────────────┘                                                            
+            │                                                                      
+            1                                                                      
+            │                                                                      
+            ▼                                                                      
+  ┌───────────────────┐         2. Creates and binds IPv4 and IPv6 sockets to      
+  │                   ├────2    the specified port.                                
+  │      QServer      │    │                                                       
+  │                   │◀───3    3. Starts listening on these sockets by wrapping   
+  └───────────────────┘         them into CFSocketRefs and using them as sources   
+            │                   for the active runloop. Also installs a            
+                                listening callback (ListeningSocketCallback).      
+            │                                                                      
+     (when a request                                                               
+        comes in)                                      ...                         
+                                                                                   
+            │                                                                      
+            ▼                                                                      
+┌───────────────────────┐       4. This callback is called when a new connection   
+│                       │       arrives. It verifies that we've got the correct    
+│ListeningSocketCallback│       socket and callback type and then asks its        
+│                       │       delegate for a new connection. This connection     
+└───────────────────────┘       instance is going to be populated with a pair of   
+            │                   NSStreams (one for input and one for output)       
+            │                   created from the socket in question.               
+            4                                                                      
+            │                                                                      
+            ▼                                                                      
+  ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐         5. The delegate creates a new IETelnetConnection   
+       <protocol>               instance with two provided streams and -open's     
+  │  QServerDelegate  │         them.                                              
+     ┌───────────────────┐                                                         
+  └ ─│                   │                                                         
+     │  IETelnetServer   │────────5───────┐                                        
+     │                   │                │                                        
+     └───────────────────┘                │                                        
+                                          ▼                                        
+                                ┌───────────────────┐   6. After parsing a request 
+                                │                   │   body the connection asks   
+            ┌────────6──────────│IETelnetConnection │   it's assigned executor to  
+            │                   │                   │   run the requested command  
+            │                   └───────────────────┘   (if appropriate).          
+            │                             ▲                                        
+            ▼                             │                                        
+  ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐                   │                                        
+       <protocol>                         │                                        
+  │ IFCommandExecutor │                   │   7. The executor runs the command via 
+      ┌───────────────────┐               │   NSTask, captures stdout and stderr   
+  └ ─ ┤                   │               │   and dumps them back into the         
+      │  IETelnetServer   │───────7───────┘   connection's output.                 
+      │                   │                                                        
+      └───────────────────┘                   This output is then transferred to   
+                                              the client as a daemon's final response.     
+                                                                                   
+                                              QServer is automatically deallocates 
+                                              this connection when it's done       
+                                              communicating.                       
+```
+
+## Copyrights
 
 QServer[.h, .m], QCommandConnection[.h, .m], QCommandLineConnection[.h, .m]
 	Copyright (c) 2011 Apple Inc. All Rights Reserved.
 
 IE* classes
 	Copyright © 2017 Dmitry Rodionov. All rights reserved.
-
-
-
-
-
-
-
