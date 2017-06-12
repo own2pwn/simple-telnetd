@@ -10,7 +10,7 @@
 #import "IETelnetConnection.h"
 #import "QServer.h"
 
-@interface IETelnetServer() <QServerDelegate, IFCommandExecutor, QCommandConnectionDelegate>
+@interface IETelnetServer() <QServerDelegate, IECommandExecutor, QCommandConnectionDelegate>
 @property (strong) QServer *server;
 @property (readwrite) NSUInteger assignedPort;
 @end
@@ -110,7 +110,7 @@
     [self.server closeOneConnection:connection];
 }
 
-#pragma mark - IFCommandExecutor's
+#pragma mark - IECommandExecutor's
 
 - (void)execute:(NSString *)program arguments:(NSArray<NSString *> *)arguments connection:(IETelnetConnection *)connection
 {

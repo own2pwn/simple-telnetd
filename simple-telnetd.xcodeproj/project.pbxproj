@@ -16,7 +16,6 @@
 		0A291B2D1EED50CC0032774C /* IETelnetConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B2C1EED50CC0032774C /* IETelnetConnection.m */; };
 		0A291B311EED6A2E0032774C /* NSArray+FP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B2A1EED45840032774C /* NSArray+FP.m */; };
 		0A291B341EED7CE70032774C /* IETelnetDaemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B331EED7CE70032774C /* IETelnetDaemon.m */; };
-		0A291B361EED961D0032774C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0A291B351EED961D0032774C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -182,7 +181,6 @@
 			files = (
 				0A291B211EED410F0032774C /* QServer.m in Sources */,
 				0A291B2D1EED50CC0032774C /* IETelnetConnection.m in Sources */,
-				0A291B361EED961D0032774C /* README.md in Sources */,
 				0A291B341EED7CE70032774C /* IETelnetDaemon.m in Sources */,
 				0A291B201EED410F0032774C /* QCommandLineConnection.m in Sources */,
 				0A291B241EED421E0032774C /* IETelnetServer.m in Sources */,

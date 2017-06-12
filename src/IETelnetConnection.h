@@ -11,7 +11,7 @@
 @class IETelnetConnection;
 
 /// See @IETelnetConnection
-@protocol IFCommandExecutor <NSObject>
+@protocol IECommandExecutor <NSObject>
 @required
 - (void)execute:(nonnull NSString *)cmd
       arguments:(nonnull NSArray <NSString *> *)arguments
@@ -25,7 +25,7 @@
 /// of requested programms and passing their output back to the client.
 @interface IETelnetConnection: QCommandLineConnection
 
-@property (weak, nullable) id <IFCommandExecutor> executor;
+@property (weak, nullable) id <IECommandExecutor> executor;
 
 - (void)sendResponseLine:(nonnull NSString *)response;
 - (void)sendResponseLines:(nonnull NSArray <NSString *> *)response;
