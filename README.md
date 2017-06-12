@@ -42,7 +42,7 @@ Alternatively you can specify the exact port on which the daemon will be listeni
 $ simple-telnetd -port 1337 -timeout 5
 ```
 
-The configuration file for simple-telnetd is loaded *once* at the daemon startup so it won't notice any changes to this file. To let the daemon know that it need to reload its configuration and apply new whitelist rules, send it a SIGHUP signal:
+The configuration file for simple-telnetd is loaded *once* at the daemon startup so it won't notice any changes to this file. To let the daemon know that it needs to reload the configuration and apply new whitelist rules, send it a SIGHUP signal:
 
 ```
 $ killall -SIGHUP simple-telnetd
