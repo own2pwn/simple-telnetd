@@ -203,7 +203,7 @@ any execution errors to the client.
             ▼                             │                                        
   ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐                   │                                        
        <protocol>                         │                                        
-  │ IFCommandExecutor │                   │   7. The executor runs the command via 
+  │ IECommandExecutor │                   │   7. The executor runs the command via 
       ┌───────────────────┐               │   NSTask, captures stdout and stderr   
   └ ─ ┤                   │               │   and dumps them back into the         
       │  IETelnetServer   │───────7───────┘   connection's output.                 
@@ -218,8 +218,12 @@ any execution errors to the client.
 
 ## Copyrights
 
-QServer[.h, .m], QCommandConnection[.h, .m], QCommandLineConnection[.h, .m]
+```
+QServer[.h, .m], QCommandConnection[.h, .m], QCommandLineConnection[.h, .m]  
 	Copyright (c) 2011 Apple Inc. All Rights Reserved.
+```
 
-IE* classes
+```
+IE* classes  
 	Copyright © 2017 Dmitry Rodionov. All rights reserved.
+```
