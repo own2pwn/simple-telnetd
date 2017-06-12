@@ -49,7 +49,7 @@
     //      it goes beyond the scope of this daemon, so I'd rather not.
     //
     // Given that the task description didn't mention anything about *the kind* of arguments, I suppose
-    // that we can stick with #1 and parse the user's input in a dumb way (i.e. no multi-words args).
+    // that we can stick with #1 and parse the user's input in a dumb way (i.e. no multi-word args).
 
     NSArray <NSString *> *components = [input componentsSeparatedByCharactersInSet:
                                         [NSCharacterSet whitespaceAndNewlineCharacterSet]];
